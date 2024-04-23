@@ -1,0 +1,122 @@
+/*Media query
+max - valor menor que determinado número de px é aplicado o valor do MEDIA
+min - valor maior que determinado número de px é aplicado o valor do MEDIA*/
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo-mario {height: 200px;}
+button{margin-top: 30px;
+    color: white;
+background-color: red;
+border-radius: 3px ;
+border: none;
+width: 200px;
+height: 50px;
+cursor: pointer;
+text-transform: uppercase;
+font-weight: bold;}
+.imagem-mario-luigi {height: 500px;}
+body {height: 100vh;}
+.caixa-mãe {justify-content: space-around;
+    display: flex;
+align-items: center;
+padding: 100px;
+}
+.caixa-contato {width: 40%;}
+.caixa-video {position: fixed;
+    top: 0;
+z-index: -1;}
+video {min-height: 100%;
+min-width: 100%;
+position: fixed;
+top: 0;}
+.mascara {height: 100%;
+width: 100%;
+background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+position: fixed;
+top: 0;}
+
+p{color: white;
+font-size: 20px;}
+
+.link-whatsapp img {height: 60px; 
+    position: fixed;
+right: 20px;
+bottom: 20px; }
+.logo {display:flex;
+align-items: center;
+gap: 30px;
+margin: 30px;}
+.logo img {height: 60px;}
+.logo a {color:white;
+font-size: 24px;
+cursor:pointer;}
+.caixa-contato p {color:white}
+.logo a:hover {color: #C51111;
+font-size: 26px;
+transition: 0.5s color ease-in-out;}
+.caixa-contato button:hover {color: unset;
+    transition: 0.5s color ease-in-out;}
+.Formulario-Fale-Conosco {background-color: white;
+display:flex;
+flex-direction: column;
+position: fixed;
+top: 30%;
+left: -300px;
+padding: 20px;
+border-radius: 5px;
+gap: 20px;
+transition: left 1s ease-in-out;
+}
+
+input 
+{height: 40px;
+border-radius: 5px;
+border: 1px solid grey;
+padding-left: 5px;
+outline: #18D80F;}
+
+textarea 
+{height: 100px;
+    width: 270px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding-left: 5px;
+    outline: #18D80F;}
+    .mascara-formulario {
+      visibility: hidden;  
+        position: fixed;
+    top: 0;
+width: 100vw;
+height: 100vh;
+background: linear-gradient(109deg, rgba(10,12,16,0.99) 15%, rgba(10,12,16,0.7) 50%, rgba(10,12,16,0.99) 85%);
+transition: visibility 1s ease-in-out;}
+
+@media(max-width: 1100px) 
+{p {display: none;}
+.caixa-mãe {flex-direction: column;
+padding: 10px;
+justify-content: flex-start;}
+
+.caixa-principal {display: flex;
+align-items: center;
+flex-direction: column;
+}
+.imagem-mario-luigi {width: 80vw;
+height: auto;}
+
+.logo {margin: 10px;
+display: flex;
+align-items: center;
+justify-content: center;}
+
+.logo img {display: none;}
+
+.logo a {font-size: 20px;}
+.caixa-contato img{
+display: flex;
+align-items: center;
+justify-content: center;}}
